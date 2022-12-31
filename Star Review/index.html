@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <img id="main-star" src="img/main-star.png" width="150">
+        <div id="texts">
+            <h1 id="main-text">Rate Your Experience</h1>
+            <p id="desc-text">Let us know how your visit on Youtube went!</p>
+        </div>
+        <div id="stars">
+            <img onmouseout="clearHover()" onmouseover="starHoverOne()" onclick="starChangeOne()" id="star-one" class="star" src="img/star-type-three.svg" width="65">
+            <img onmouseout="clearHover()" onmouseover="starHoverTwo()" onclick="starChangeTwo()" id="star-two" class="star" src="img/star-type-three.svg" width="65">
+            <img onmouseout="clearHover()" onmouseover="starHoverThree()" onclick="starChangeThree()" id="star-three" class="star" src="img/star-type-three.svg" width="65">
+            <img onmouseout="clearHover()" onmouseover="starHoverFour()" onclick="starChangeFour()" id="star-four" class="star" src="img/star-type-three.svg" width="65">
+            <img onmouseout="clearHover()" onmouseover="starHoverFive()" onclick="starChangeFive()" id="star-five" class="star" src="img/star-type-three.svg" width="65">
+        </div>
+        <hr>
+        <div id="buttons">
+            <button id="btn-cancel" class="btn">Cancel</button>
+            <button id="btn-submit" class="btn">Submit</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

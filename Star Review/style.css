@@ -1,0 +1,114 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/background.png);
+    background-size: contain;
+    display: grid;
+    justify-content: center;
+    padding-top: 25vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 480px;
+    height: fit-content;
+    background-color:            white;
+    box-shadow: 0 0 14px 0px     #48558bbb;
+    border-radius: 33px;
+}
+
+#main-star {
+    margin-bottom: 15px;
+}
+
+#texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color:                      #48558B;
+    margin: 15px;
+    padding: 0;
+}
+
+#desc-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color:                      #A2ACCB;
+    margin: 5px;
+    padding: 0;
+}
+
+#stars {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.star {
+    padding: 7px;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 20px;
+    height: 3px;
+    border-radius: 100px;
+    width: 460px;
+    background-color:           #F2F5FF;
+    border: none;
+}
+
+#buttons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn {
+    margin: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 60px;
+    width: 150px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#btn-cancel {
+    background-color:       rgba(255, 255, 255, 0);
+    border: solid;
+    border-color:           #CCCCCC;
+    color:                  #CCCCCC;
+}
+
+#btn-submit {
+    background: linear-gradient(60deg, #FF6359, #FF9E2D);
+    border: none;
+    color: white;
+}
+
+/* Hovers */
+
+#btn-cancel:hover {
+    background-color: #CCCCCC;
+    color: white;
+}
+
+#btn-submit:hover {
+    border-radius: 10px;
+}
